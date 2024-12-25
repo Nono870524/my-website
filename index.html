@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡單電商平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的商店</h1>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product-card">
+                <img src="product1.jpg" alt="1111111111111商品1">
+                <h2>商品名稱</h2>
+                <p class="price">NT$ 1,000</p>
+                <button class="buy-button" onclick="initiatePayment()">立即購買</button>
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AS2HRCrXB2B3Dm419vH-APMk4aalw0CMJZ8NbRuYVUiiOILcxhoqaGNlVVpiYeGsR4eAUWcg8_LiBqYp&currency=TWD"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
